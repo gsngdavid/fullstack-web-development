@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+
+
+<h1><%= pageTitle %></h1>
+<p><%= startingContent %></p>
+
+<% posts.forEach((post) => { %>
+
+    <h1> <%= post.title %></h1>
+
+    <p>
+        <% for(let i=0; i<100; i++) { %><%= post.body[i] %><% } %>...
+        <a href="/posts/<%= post._id %>" class="btn btn-sm bg-primary">Read me</a>
+    </p>
+
+<% }) %>
+
+
+<%- include("partials/footer") -%>

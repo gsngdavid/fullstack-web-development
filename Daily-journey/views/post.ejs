@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+<div class="container py-4">
+    <h1><%= post.title %></h1>
+    <p><%= post.body %></p>
+    <p>
+        <a href="/update/post/<%= post._id %>" class="btn btn-sm bg-primary">Update</a>
+        <a href="/delete/post/<%= post._id %>" class="btn btn-sm bg-danger">Delete</a>
+    </p>
+</div>
+
+<%- include("partials/footer") -%>

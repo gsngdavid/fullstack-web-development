@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+
+
+<h1><%= pageTitle %></h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="" class="form-label">Title</label>
+        <input type="text" name="postTitle" id="" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Post</label>
+        <textarea name="postBody" id="" cols="30" rows="10" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Puplish</button>
+</form>
+
+
+
+<%- include("partials/footer") -%>

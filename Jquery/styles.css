@@ -1,0 +1,15 @@
+.title {
+    font-size: 10rem;
+    color: red;
+    font-family: cursive;
+}
+
+.margi {
+    margin: 50px;
+}
+
+.my-div  {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
